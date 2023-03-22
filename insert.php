@@ -1,5 +1,5 @@
 <?php
-$baglanti=mysqli_connect("localhost","u724691799_tuncayx","Tuncay23*","u724691799_dbname");
+$baglanti=mysqli_connect("sql448.main-hosting.eu","u724691799_tuncayx","Tuncay23*","u724691799_dbname");
 
 $name=$_POST["gelenisim"];
 $no=$_POST["gelenno"];
