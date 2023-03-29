@@ -68,11 +68,11 @@ while($res = mysqli_fetch_array($result))
 	<form name="form1" method="post" action="edit.php">
 		<table border="0">
 			<tr> 
-				<td><label for="adsoyad" class="form-label">Ad Soyad</label></td>
+				<td><label for="name" class="form-label">Ad Soyad</label></td>
 				<td><input type="text" name="name" class="form-control" placeholder="Adınız" value="<?php echo $name;?>"></td>
 			</tr>
 			<tr> 
-				<td>numara</td>
+				<td><label for="no" class="form-label">Numara</label></td>
 				<td><input type="text" name="no" class="form-control" placeholder="Numara" value="<?php echo $numara;?>"></td>
 			</tr>
 			<tr>
