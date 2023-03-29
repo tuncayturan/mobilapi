@@ -92,7 +92,7 @@ else
                         <tr>
                             <th scope="col">Üye Id</th>
                             <th scope="col">Ad Soyad</th>
-                            <th scope="col">Email</th>
+                            <th scope="col">Numara</th>
                             <th scope="col">Düzenle</th>
                             <th scope="col">Sil</th>
                         </tr>
