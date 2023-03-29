@@ -76,8 +76,8 @@ else
                     </div>
 
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email Adres</label>
-                        <input type="text" name="gelenno" class="form-control" placeholder="name@example.com">
+                        <label for="email" class="form-label">Numara</label>
+                        <input type="text" name="gelenno" class="form-control" placeholder="221">
                     </div>
                     <div class="form-group mb-3">
                         <button class="btn btn-success" name="btnkaydet">Kaydet</button>
