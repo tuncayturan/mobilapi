@@ -2,9 +2,9 @@
 include('config.php');
 if(isset($_POST['btnkaydet']))
 {
-$name=$_POST["adsoyad"];
-$mail=$_POST["email"];
-$sorgu="insert into uyeler(isim,email) values('$name','$mail')";
+$isim=$_POST["adsoyad"];
+$numara=$_POST["numara"];
+$sorgu="insert into uyeler(isim,numara) values('$isim','$numara')";
 $komut=mysqli_query($baglan,$sorgu);
 if($komut)
 {
@@ -77,7 +77,7 @@ else
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Email Adres</label>
-                        <input type="text" name="email" class="form-control" placeholder="name@example.com">
+                        <input type="text" name="numara" class="form-control" placeholder="name@example.com">
                     </div>
                     <div class="form-group mb-3">
                         <button class="btn btn-success" name="btnkaydet">Kaydet</button>
