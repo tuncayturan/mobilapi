@@ -4,7 +4,7 @@ if(isset($_POST['btnkaydet']))
 {
 $isim=$_POST["gelenisim"];
 $numara=$_POST["gelenno"];
-$sorgu="insert into uyeler(isim,numara) values('$isim','$numara')";
+$sorgu="insert into ogrenciler(isim,numara) values('$isim','$numara')";
 $komut=mysqli_query($baglan,$sorgu);
 if($komut)
 {
@@ -99,14 +99,14 @@ else
                     </thead>
                     <tbody>
                         <?php
-                        $sorgu="select * from uyeler";
+                        $sorgu="select * from ogrenciler";
                         $komut=mysqli_query($baglan,$sorgu);
                        while($row=mysqli_fetch_assoc($komut))
                        {
                         echo "<tr>";
                           echo  "<th scope='row'>".$row['id']."</th>";                  
                           echo "<td>".$row['isim']."</td>";
-                          echo "<td>".$row['email']."</td>";
+                          echo "<td>".$row['numara']."</td>";
                           echo "<td scope='col'><a href='edit.php?id=$row[id]' class='link-danger'><i class='fa-solid fa-pen-to-square'></i></a> </td>";
                           echo "<td scope='col'><a href='#' onclick='myFunction($row[id])' class='link-warning'><i class='fa-solid fa-trash'></i></a> </td>";
                           //echo "<td scope='col'><a href='delete.php?id=$row[id]' class='link-warning'><i class='fa-solid fa-trash'></i></a> </td>";
