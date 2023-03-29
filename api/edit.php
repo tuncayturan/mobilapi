@@ -77,7 +77,7 @@ while($res = mysqli_fetch_array($result))
 			</tr>
 			<tr>
 				<td><input type="hidden" class="form-control" name="id" value=<?php echo $_GET['id'];?>></td>
-				<td><input type="submit" class="btn btn-warning" name="update" value="Update"></td>
+				<td><input type="submit" class="btn btn-warning" name="update" value="Güncelle"></td>
 			</tr>
 		</table>
 	</form>
